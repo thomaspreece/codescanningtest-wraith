@@ -10,6 +10,7 @@ end
 
 def crop_images
   Wraith::CropImages.new(config_name).crop_images
+  Wraith::CompareImages.new(config_name).compare_task(test_image1, test_image2, diff_image, data_txt)
 end
 
 def compare_images
